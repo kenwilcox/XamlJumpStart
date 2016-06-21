@@ -5,21 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:XamlJumpStart"
         mc:Ignorable="d"
-        Title="Syntax" Height="350" Width="525">
-    <Grid>
-        <!--<Button Width="100" Height="80">
-            <StackPanel Orientation="Vertical">
-                <Image Source="Assets/pluralsightlogo.png"></Image>
-                <TextBlock Text="Hi there!"></TextBlock>
-            </StackPanel>
-        </Button>-->
-
-        <!--<StackPanel Orientation="Horizontal">
-            <Button Content="1" Width="30" Height="30"/>
-            <Button Content="2" Width="30" Height="30"/>
-            <Button Content="3" Width="30" Height="30"/>
-        </StackPanel>-->
-
-        <Button Width="100" Height="30" x:Name="BtnTest"></Button>
+        Title="Shapes" Height="350" Width="525">
+    <Grid Background="White">
+        <!--<Path Data="M2.5,2.5 L67.5,2.5 67.5,39.252838 67.685478,39.208405 C72.523331,38.098118 77.667,37.5 83,37.5 111.44267,37.5 134.5,54.51318 134.5,75.5 134.5,96.486824 111.44267,113.5 83,113.5 54.557335,113.5 31.5,96.486824 31.5,75.5 31.5,72.22081 32.062923,69.038628 33.121357,66.003212 L33.305901,65.5 2.5,65.5 z" Fill="#FF0C41F3" HorizontalAlignment="Left" Height="116" Margin="40,35,0,0" Stretch="Fill" Stroke="#FFFB1616" StrokeThickness="5" VerticalAlignment="Top" Width="137"/>-->
+        <Path Stroke="Blue" StrokeThickness="5">
+            <Path.Data>
+                <!--<LineGeometry StartPoint="10,20" EndPoint="10,200"></LineGeometry>-->
+                <!--<RectangleGeometry Rect="10, 10, 200, 100"></RectangleGeometry>-->
+                <PathGeometry>
+                    <PathFigureCollection>
+                        <PathFigure StartPoint="10,10">
+                            <PathFigure.Segments>
+                                <LineSegment Point="10,200"></LineSegment>
+                                <ArcSegment Size="50,50" RotationAngle="90" Point="200,100"></ArcSegment>
+                            </PathFigure.Segments>
+                        </PathFigure>
+                    </PathFigureCollection>
+                </PathGeometry>
+            </Path.Data>
+        </Path>
     </Grid>
 </Window>
