@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="Shapes" Height="350" Width="525">
     <Grid Background="White">
-        <Rectangle HorizontalAlignment="Left" Height="104" Margin="29,34,0,0" Stroke="Blue" StrokeThickness="5" VerticalAlignment="Top" Width="166">
+        <Rectangle HorizontalAlignment="Left" Height="211" Margin="29,34,0,0" Stroke="Blue" StrokeThickness="5" VerticalAlignment="Top" Width="269">
             <Rectangle.Fill>
                 <ImageBrush ImageSource="/Assets/pluralsightlogo.png" Viewport="0,0,50,50" ViewportUnits="Absolute" TileMode="Tile">
-                    
+
                 </ImageBrush>
             </Rectangle.Fill>
         </Rectangle>
