@@ -23,6 +23,9 @@ namespace XamlJumpStart
         public MainWindow()
         {
             InitializeComponent();
+
+            BtnTest.Width = 100;
+            BtnTest.Height = 20;
         }
     }
 }

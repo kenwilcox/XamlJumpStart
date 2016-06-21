@@ -14,10 +14,12 @@
             </StackPanel>
         </Button>-->
 
-        <StackPanel Orientation="Horizontal">
+        <!--<StackPanel Orientation="Horizontal">
             <Button Content="1" Width="30" Height="30"/>
             <Button Content="2" Width="30" Height="30"/>
             <Button Content="3" Width="30" Height="30"/>
-        </StackPanel>
+        </StackPanel>-->
+
+        <Button Width="100" Height="30" x:Name="BtnTest"></Button>
     </Grid>
 </Window>
